@@ -1,0 +1,538 @@
+#wrap {
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mainImg_box {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main_img {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    /*background-color: aliceblue;*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 30px;
+    z-index: 0;
+}
+
+.category {
+    width: 150px;
+    height: 100px;
+    font-size: 40px;
+    font-weight: bolder;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.category:nth-of-type(2) {
+    width: 150px;
+    height: 80px;
+    font-size: 40px;
+    font-weight: bolder;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.category:before {
+    content: '';
+    position: absolute;
+    top: 67%;
+    left: 0;
+    width: 30%;
+    height: 17px;
+    background-color: #c7a4f5;
+    z-index: -1;
+    animation: highlight 4s linear infinite;
+}
+
+.category.album:before {
+    background-color: #6cf3c3;
+}
+
+.category.dvd:before {
+    background-color: #faff58;
+}
+
+@keyframes highlight {
+    0% {
+        width: 0; /* 애니메이션 시작 시 길이 0 */
+    }
+    50% {
+        width: 100%; /* 중간 지점에서 전체 텍스트를 칠함 */
+    }
+    100% {
+        width: 0; /* 애니메이션 끝날 때 형광펜이 사라짐 */
+    }
+}
+
+.plus{
+    width: 100%;
+    height: 80px;
+    text-align: right;
+    margin-right: 15px;
+}
+
+.plusImg{
+    height: 50px;
+}
+
+.section_wrap {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section a {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section a:hover {
+    text-decoration: none;
+    color: #333333;
+}
+
+.height_box {
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.height_box img {
+    width: 205px !important;
+    height: 205px !important;
+    margin-bottom: 10px;
+    object-fit: contain !important;
+}
+
+.height_box h4 {
+    margin-bottom: 0;
+}
+
+.price {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.itemNm {
+    font-size: 13px;
+    margin-bottom: 0;
+    color: #7f7f7f;
+    padding: 0 20px;
+}
+
+.section_in {
+    width: 95%;
+    height: 95%;
+    border: 2px solid #919191;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section img {
+    width: 75%;
+    height: auto;
+    border: 1px solid #eee;
+}
+
+.icon_box {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bi-caret-left::before {
+    font-size: 28px;
+    opacity: 0.6;
+}
+
+.bi-pause::before {
+    font-size: 28px;
+    opacity: 0.6;
+}
+
+.bi-caret-right::before {
+    font-size: 28px;
+    opacity: 0.6;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    margin: 80px 0 70px 0;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.long_box_wrap {
+    width: 1200px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.long_box {
+    width: 3600px; /* 원하는 크기로 설정 */
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.long_img {
+    width: 1200px;
+
+}
+
+.long_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 15px;
+}
+
+.button-next, .button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.button-next {
+    right: 2%;
+    border-radius: 100%;
+    border: 1px solid #949494;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    background: rgb(235 235 235 / 65%);
+    box-shadow: 1px 1px 2px #6d6d6d;
+}
+
+.button-next img {
+    width: 100%;
+}
+
+.button-prev {
+    left: 2%;
+    border-radius: 100%;
+    border: 1px solid #949494;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    background: rgb(235 235 235 / 65%);
+    box-shadow: 1px 1px 2px #6d6d6d;
+}
+
+.button-prev img {
+    width: 100%;
+}
+
+
+.swiper-container-custom {
+    width: 1350px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.swiper-slide.swiper-slide-active {
+    width: 25%;
+    display: flex;
+
+}
+
+.item-detail-wrapper {
+    width: 80%;
+    font-size: 15px;
+    overflow: hidden;              /* 넘치는 부분은 보이지 않게 */
+    position: relative;            /* 상대 위치로 내부 요소의 배치를 조정 */
+    font-weight: 700;
+}
+
+.item-detail-content {
+    display: inline-block;         /* 인라인 블록으로 텍스트가 이어지도록 */
+    white-space: nowrap;           /* 텍스트를 한 줄로만 표시 */
+    animation: slide-text 10s linear infinite; /* 슬라이드 애니메이션 */
+    animation-timing-function: linear;  /* 애니메이션의 속도를 일정하게 설정 */
+    float: left;
+}
+
+/* 슬라이드 애니메이션 */
+@keyframes slide-text {
+    0% {
+        transform: translateX(100%); /* 처음에는 오른쪽 끝으로 시작 */
+        opacity: 0; /* 처음에는 보이지 않도록 설정 */
+    }
+    50% {
+        opacity: 1; /* 중간 지점에서 텍스트가 보이도록 */
+    }
+    100% {
+        transform: translateX(-100%); /* 끝까지 왼쪽으로 슬라이드 */
+        opacity: 0; /* 끝에는 사라지도록 설정 */
+    }
+}
+
+/* 텍스트가 슬라이드되면서 자연스럽게 나타나는 효과 */
+@keyframes fade-in-out {
+    0% {
+        opacity: 0; /* 처음에는 투명 */
+    }
+    30% {
+        opacity: 1; /* 슬라이드가 시작될 때부터 빠르게 나타나도록 */
+    }
+    60% {
+        opacity: 1; /* 텍스트가 슬라이드 중에도 계속 보이도록 */
+    }
+    100% {
+        opacity: 0; /* 슬라이드 끝날 때 텍스트가 다시 사라지도록 */
+    }
+}
+
+/*width:100% 앨범 발매 안내 배너(슬라이드)*/
+#background_color {
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    background-size: cover;
+    background-position: center center;
+    transition: background-image 0.5s ease, opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    margin: 80px auto 0;
+}
+
+.bs_wrap {
+    width: 1220px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.promotion {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.h4_prom {
+    width: 75%;
+    color: white;
+    line-height: 45px;
+    margin-top: -40px;
+    margin-bottom: 45px;
+}
+
+#slide_wrap {
+    width: 805px;
+    height: 330px;
+    overflow: hidden;
+}
+
+.slider {
+    width: 4025px;
+}
+
+.slider li {
+    width: 805px;
+    height: 330px;
+    float: left;
+}
+
+.slider li img {
+    width: 100%;
+    height: 100%;
+}
+
+.span {
+    position: absolute;
+    display: block;
+    font-size: 25px;
+    color: #fff;
+    line-height: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    transform: translateY(-50%);
+    top: 72%;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.span:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+.prev {
+    left: 12%;
+    border-radius: 50%;
+    padding-right: 5px;
+}
+
+.next {
+    right: 59%;
+    border-radius: 50%;
+    padding-left: 5px;
+}
+
+/*머신러닝 추천 상품 css*/
+#product_rec {
+    width: 1300px;
+    height: 550px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 40px auto 0;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.h1_box {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prod_svg {
+    width: 40px;
+    height: 40px;
+}
+
+.prod_svg img {
+    width: 100%;
+    height: 100%;
+}
+
+.card_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+    margin-top: 50px;
+}
+
+.product_h1 {
+    width: auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.product-card {
+    width: 230px;
+    height: 350px;
+    margin: 0 15px 15px 15px;
+    padding: 5px;
+    border: 1px solid #b5b5b5;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* hover 효과 추가 */
+    opacity: 0.9;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-card.active {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.prod_num {
+    width: 25px;
+    height: 25px;
+    align-self: flex-start;
+    margin: 10px 0 5px 25px;
+}
+
+.product-image {
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.product-name {
+    width: 160px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-left: 28px;
+}
+
+.artist-name {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 0;
+}
+
+.product-price {
+    font-size: 15px;
+    color: #424242;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}

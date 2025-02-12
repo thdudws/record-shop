@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'NEXON Lv1 Gothic OTF';
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+ul, ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #333
+}
+
+a:hover {
+    text-decoration: none;
+    color: #525252;
+    opacity: 0.9;
+}
+
+.footer {
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #fafafa;
+}
+
+footer {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.f_left {
+    font-size: 12px;
+    font-style: normal;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.f_left h3{
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0 0 15px 0;
+    color: #333;
+    padding: 0;
+}
+
+.f_left address{
+    font-size: 12px;
+    font-style: normal;
+    margin-bottom: 20px;
+    color: #676767;
+}
+
+.f_left address span {
+    display: inline-block;
+    margin-right: 18px;
+    margin-bottom: 5px;
+}
+
+.f_center {
+    width: 1300px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.f_center p {
+    color: #797979;
+}
+
+.f_center a {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.f_right {
+    width: 320px;
+    flex-shrink: 0;
+    margin-top: 50px;
+}
+
+.f_right h3 {
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0 0 15px 0;
+    color: #333;
+    padding: 0;
+}
+
+.f_right address{
+    font-size: 12px;
+    font-style: normal;
+    margin-bottom: 8px;
+    color: #676767;
+}
+
+.f_right address span{
+    display: inline-block;
+    font-size: 12px;
+    font-style: normal;
+}
+.logo_img {
+    width: 80px;
+    height: 80px;
+}
+
+.member {
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+}
+
+.member_box {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.member_box a {
+    display: flex;
+    flex-direction: column;
+}
+
+.member_box a > p {
+    margin-top: 7px;
+    text-align: center;
+}
+
+.content{
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.write{
+    text-align: center;
+}
+
+.back2{
+    cursor: pointer;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    margin-top: 10px;
+}
+.back2-1{
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.back2I{
+    width: 35px;
+}
+
+.up_btn {
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    z-index: 1;
+    border: 1px solid #272727;
+    border-radius: 100%;
+    padding: 5px;
+    box-shadow: 1px 1px 3px #313131;
+    background-color: white;
+    opacity: 0;  /* 처음에 보이지 않도록 설정 */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.up_btn img {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+}
+
+.up_btn:hover {
+    cursor: pointer;
+}
+
+.up_btn.visible {
+    opacity: 1;
+}
+
+.page-link {
+    color: #29186a;
+}
+
+.page-item.active .page-link {
+    background-color: #2f16b9;
+    border-color: #2f16b9;
+}
+
+.page-link:hover {
+    color: #29186a;
+}

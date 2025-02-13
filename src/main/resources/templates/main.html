@@ -48,100 +48,6 @@
 
         <main>
 
-
-            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
-
-<!--            <div class="recommend">-->
-<!--                <h2>추천 상품</h2>-->
-<!--                <div id="recommendations-container" class="recommendations-container">-->
-<!--                    &lt;!&ndash; 여기에 추천 상품을 동적으로 추가할 예정 &ndash;&gt;-->
-<!--                </div>-->
-<!--            </div>-->
-
-
-            <script>
-                // window.onload = async function () {
-                //     try {
-                //         // member_id를 하드코딩으로 예시
-                //         const member_id = 2;  // 실제 로그인된 사용자 ID로 대체해야 합니다.
-                //
-                //         // API 호출 (FastAPI에서 추천 상품 데이터 받기)
-                //         const response = await axios.get(`http://127.0.0.1:8000/recommend/${member_id}`);
-                //         const recommendations = response.data.recommendations;
-                //
-                //         if (recommendations.length === 0) {
-                //             alert("추천 상품이 없습니다.");
-                //             return;
-                //         }
-                //
-                //         // 추천 상품을 카드 형태로 생성하여 div에 삽입
-                //         const container = document.querySelector("#recommendations-container");
-                //         recommendations.forEach(recommend => {
-                //             const productDiv = document.createElement("div");
-                //             productDiv.classList.add("product-card");
-                //
-                //             productDiv.innerHTML = `
-                //     <img src="${recommend.item_img}" alt="${recommend.item_nm}" class="product-image">
-                //     <div class="product-link">
-                //         <h6 class="product-detail">${recommend.item_detail}</h6>
-                //         <p class="product-name">${recommend.item_nm}</p>
-                //         <p class="product-price">${recommend.price}원</p>
-                //     </div>
-                // `;
-                //
-                //             container.appendChild(productDiv);
-                //         });
-                //     } catch (error) {
-                //         console.error("추천 상품을 불러오는 데 실패했습니다.", error);
-                //     }
-                // };
-
-            //     window.onload = async function () {
-            //         try {
-            //             // member_id를 하드코딩으로 예시
-            //             const member_id = 2;  // 실제 로그인된 사용자 ID로 대체해야 합니다.
-            //
-            //             // API 호출 (FastAPI에서 추천 상품 데이터 받기)
-            //             const response = await axios.get(`http://127.0.0.1:8000/recommend/${member_id}`);
-            //             const recommendations = response.data.recommendations;
-            //
-            //             if (recommendations.length === 0) {
-            //                 alert("추천 상품이 없습니다.");
-            //                 return;
-            //             }
-            //
-            //             // 추천 상품을 카드 형태로 생성하여 div에 삽입
-            //             const container = document.querySelector("#product-cards-container");  // 수정된 container ID
-            //
-            //             recommendations.forEach((recommend, index) => {
-            //                 const productDiv = document.createElement("div");
-            //                 productDiv.classList.add("product-card");
-            //
-            //                 productDiv.innerHTML = `
-            //     <a href="${recommend.link}" class="product-link">
-            //         <h5 class="prod_num">${index + 1}</h5>  <!-- index + 1을 JavaScript에서 처리 -->
-            //         <img src="${recommend.item_img}" alt="${recommend.item_nm}" class="product-image">
-            //         <div class="product-info">
-            //             <h6 class="product-name">${recommend.item_detail}</h6>
-            //             <p class="product-price">${recommend.price}원</p>
-            //             <p class="product-detail">${recommend.item_nm}</p>
-            //         </div>
-            //     </a>
-            // `;
-            //
-            //                 container.appendChild(productDiv);
-            //             });
-            //         } catch (error) {
-            //             console.error("추천 상품을 불러오는 데 실패했습니다.", error);
-            //         }
-            //     };
-
-
-
-            </script>
-
-
             <!--  추천 상품 div  -->
             <div id="product_rec" th:if="${username != null}">
                 <div class="h1_box">
@@ -167,7 +73,7 @@
 
                 <th:block th:if="${category == T(com.recordshop.constant.Category).ALBUM}" class="long_wrap">
                     <div class="category album" style="width: 250px">New ALBUM</div>
-                    <a class="plus" c>
+                    <a class="plus" th:href="@{/item/list}">
                         <img class = "plusImg" th:src="@{/image/icon_more.png}" alt="더보기">
                     </a>
                 </th:block>

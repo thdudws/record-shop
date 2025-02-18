@@ -384,7 +384,7 @@ https://github.com/user-attachments/assets/c5edc991-b0e4-4b86-a55e-48c5b137eebe
 <br/>
 
 ## 📂 프로젝트 보고서 
-[Spring Boot project 결과보고.pptx](https://github.com/user-attachments/files/18419696/Spring.Boot.project.pptx)
+[스프링부트-프로젝트.pdf](https://github.com/user-attachments/files/18841806/-.pdf)
 
 <br/>
 

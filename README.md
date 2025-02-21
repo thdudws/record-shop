@@ -252,7 +252,7 @@
 - 권한 관리: 사용자별로 접근 가능한 페이지나 기능을 제어.
 - 결제 기능: KG이니시스, 카카오페이 결제 구현 
 #### 2. 데이터베이스 연동
-- JPA / MyBatis: 데이터베이스와 연동하여 CRUD(Create, Read, Update, Delete) 기능 제공.<br>
+- JPA : 데이터베이스와 연동하여 CRUD(Create, Read, Update, Delete) 기능 제공.<br>
 - 자동화된 마이그레이션: 데이터베이스 스키마 관리 (Flyway, Liquibase).<br>
 #### 3. 웹 페이지 및 템플릿 렌더링
 - HTML/CSS/JavaScript: 프론트엔드 구현.<br>

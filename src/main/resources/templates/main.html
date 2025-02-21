@@ -3,16 +3,18 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layouts/layout1}">
 
-
 <th:block layout:fragment="css">
     <link th:href="@{/css/main.css}" rel="stylesheet">
     <link th:href="@{/css/swiper.css}" rel="stylesheet">
 </th:block>
 
 <th:block layout:fragment="script">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
     <script th:src="@{/js/main.js}"></script>
     <script th:src="@{/js/swiper.js}"></script>
 </th:block>
+
 
 
 <div layout:fragment="content">
